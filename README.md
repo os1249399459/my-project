@@ -1,24 +1,29 @@
 # my-project
 
-## Project setup
-```
-yarn install
+## install nodejs
+
+参考 [Node.js Binary Distributions](https://github.com/nodesource/distributions/blob/master/README.md)
+
+## install yarn
+
+```sh
+sudo apt-get update && sudo apt-get install yarn
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+## install @vue/cli
+
+```sh
+yarn global add @vue/cli
 ```
 
-### Compiles and minifies for production
-```
-yarn build
+## create my-project
+
+```sh
+vue create my-project
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+## 添加 ElementUI
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+cd my-project && yarn add element-ui
+```
