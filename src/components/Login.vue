@@ -33,8 +33,8 @@ export default {
   },
   methods: {
     onSubmit() {
-      console.log("submit!");
-      this.$router.go("home")
+      console.log("submit!")
+      this.$router.go("/home")
     },
   },
 };
