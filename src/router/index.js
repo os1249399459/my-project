@@ -1,17 +1,17 @@
 import Vue from 'vue'
 import VueRouter from "vue-router";
-import ElementUI from 'element-ui'
-import App from "../views/Login.vue";
-import Home from "../views/Home.vue";
+import Login from "../views/Login.vue";
+import App from "../views/Home.vue";
 
 Vue.use(VueRouter);
-Vue.use(ElementUI)
 
 const routes = [
-  { path: "", component: App },
-  { path: "/home", component: Home },
+  { path: "", component: Login },
+  { path: "/home", component: App },
 ];
 
-export default new VueRouter({
+const router =  new VueRouter({
   routes,
 });
+
+export default router;
