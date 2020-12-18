@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import VueRouter from "vue-router";
 import Login from "../views/Login.vue";
-import App from "../views/Home.vue";
+import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
-  { path: "", component: Login },
-  { path: "/home", component: App },
+  { path: "/", component: Login },
+  { path: "/home", component: Home },
 ];
 
 const router =  new VueRouter({
