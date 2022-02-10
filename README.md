@@ -27,3 +27,9 @@ vue create my-project
 ```
 cd my-project && yarn add element-ui
 ```
+
+
+1. 付款成功后先盖章接口
+2. 盖章接口成功后调用查询验签接口
+3. 验签成功后调用contractReceive接口将合同改成待确认
+4. contractReceive成功后/crm/api/sales/crm/financeContractReceiveOrder/pay bizCode就是salesCode
