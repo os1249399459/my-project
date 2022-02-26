@@ -24,7 +24,7 @@ export default {
       rules: {
         name: [
           { required: true, message: "请输入账号", trigger: "blur" },
-          { min: 3, max: 5, message: "长度在 3 到 5 个字符", trigger: "blur" },
+          { required: true, min: 3, max: 5, message: "长度在 3 到 5 个字符", trigger: "blur" },
         ],
       },
     };
@@ -35,7 +35,7 @@ export default {
         if (valid) {
           alert("submit!");
           console.log("submit!");
-          this.$router.push("/home");
+          this.$router.push("main");
         } else {
           console.log("error submit!!");
           return false;

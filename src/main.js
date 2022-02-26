@@ -80,6 +80,7 @@ import {
 } from 'element-ui';
 import router from './router'
 import store from './store'
+import "./assets/less/index.less"
 
 Vue.config.productionTip = false
 
