@@ -1,6 +1,6 @@
 <template>
   <el-container>
-    <el-aside width="200px"> <common-aside></common-aside></el-aside>
+    <el-aside> <common-aside></common-aside></el-aside>
     <el-container>
       <el-header>
         <common-header/>
@@ -26,6 +26,6 @@ export default {
   height: 100%;
 }
 .el-header {
-  background: cyan;
+  background: black;
 }
 </style>

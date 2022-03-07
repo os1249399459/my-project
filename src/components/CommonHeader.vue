@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="l-content">
-      <el-button plain icon="el-icon-menu" size="mini"></el-button>
+      <el-button plain icon="el-icon-menu" size="mini" @click="handleMenu"></el-button>
       <h1 style="color: #fff">首页</h1>
     </div>
     <div class="r-content">
@@ -26,6 +26,11 @@ export default {
       userImg: require("../assets/images/user.png"),
     };
   },
+  methods: {
+      handleMenu(){
+          this.$store.commit("collapseMenu")
+      }
+  }
 };
 </script>
 
@@ -33,8 +38,26 @@ export default {
 // header {
 //   display: flex;
 // }
+header{
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .l-content {
   display: flex;
+  align-items: center;
+  .el-button {
+    margin-right: 20px;
+  }
+}
+
+.r-content {
+  .user{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
 }
 </style>
