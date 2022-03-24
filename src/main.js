@@ -80,6 +80,7 @@ import {
 } from 'element-ui';
 import router from './router'
 import store from './store'
+import http from 'axios'
 import "./assets/less/index.less"
 
 Vue.config.productionTip = false
@@ -167,6 +168,8 @@ Vue.prototype.$confirm = MessageBox.confirm;
 Vue.prototype.$prompt = MessageBox.prompt;
 Vue.prototype.$notify = Notification;
 Vue.prototype.$message = Message;
+
+Vue.prototype.$http = http
 
 new Vue({
   store,

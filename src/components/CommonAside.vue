@@ -20,8 +20,8 @@
         <i class="'el-icon-'+ item.icon"></i>
         <span slot="title">{{item.label}}</span>
       </template>
-      <el-menu-item-group v-for="(subItem, subIndex) in item.children" :key="subItem.path">
-        <el-menu-item :index="subIndex + ''">{{subItem.label}}</el-menu-item>
+      <el-menu-item-group v-for="(subItem, subIndex) in item.children" :index="subIndex" :key="subItem.path"> 
+        <el-menu-item >{{subItem.label}}</el-menu-item>
       </el-menu-item-group>
     </el-submenu>
   </el-menu>
