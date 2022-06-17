@@ -40,6 +40,8 @@
 </template>
 
 <script>
+import { getMenu } from '../../api/data'
+
 export default {
   name: "Home",
   data() {
@@ -142,6 +144,10 @@ export default {
       .then(function () {
         // 总是会执行
       });
+      getMenu().then(res => {
+        console.log(res)
+      }
+      )
   }
 };
 </script>

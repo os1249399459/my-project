@@ -15,7 +15,7 @@
       <i :class="'el-icon-'+ item.icon"></i>
       <span slot="title">{{item.label}}</span>
     </el-menu-item>
-    <el-submenu v-for="item in hasChildren" :index="item.path" :key="item.path">
+    <el-submenu v-for="item in hasChildren" :index="item.label" :key="item.label">
       <template slot="title">
         <i class="'el-icon-'+ item.icon"></i>
         <span slot="title">{{item.label}}</span>

@@ -1,4 +1,4 @@
-import axios from axios
+import axios from 'axios'
 import config from "../config"
 
 const beseUrl = process.env.NODE_ENV === "development" ? config.baseUrl.dev : config.baseUrl.pro
@@ -42,7 +42,7 @@ class HttpRequest {
 
     request(options){
         const instance = axios.create()
-        option =  {
+        options =  {
             ...this.getInsiderConfig,
             ...options
         }
